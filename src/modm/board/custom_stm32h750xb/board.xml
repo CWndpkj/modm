@@ -1,0 +1,18 @@
+<library>
+  <repositories>
+    <repository>
+      <path>../../../../repo.lb</path>
+    </repository>
+  </repositories>
+
+  <options>
+    <option name="modm:target">stm32h750xbh6</option>
+    <option name="modm:platform:heap:allocator">tlsf</option>
+    <option name="modm:tlsf:minimum_pool_size">16Mi</option>
+  </options>
+  <modules>
+    <module>modm:board:custom_stm32h750xb</module>
+    <module>modm:platform:heap</module>
+    <module>modm:driver:st7789</module>
+  </modules>
+</library>
